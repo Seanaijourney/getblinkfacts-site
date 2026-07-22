@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Blink Facts</title>
+<style>
+  :root {
+    --ink: #17130f;
+    --paper: #fbf9f6;
+    --paper-raised: #f3efe8;
+    --accent: #d1382a;
+    --accent-soft: #f4dbd6;
+    --rule: #e6e0d6;
+    --ink-soft: #5b5347;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f2ece2;
+      --paper: #18130f;
+      --paper-raised: #221b15;
+      --accent: #ef6a56;
+      --accent-soft: #3a211b;
+      --rule: #362c22;
+      --ink-soft: #b6a996;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1.5px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .badge .dot { color: var(--accent); }
+  h1 {
+    font-family: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+  }
+  p { font-size: 1.05rem; color: var(--ink); margin: 0 0 1rem; }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 2rem 0;
+  }
+  .links a {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  .links a.primary {
+    background: var(--accent);
+    color: #fff;
+  }
+  .links a.secondary {
+    background: var(--paper-raised);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  footer a { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <span class="badge"><span class="dot">&#9679;</span>@GetBlinkFacts</span>
+  </header>
+
+  <h1>Get Blink Facts</h1>
+  <p>
+    We publish short daily videos revealing surprising facts in science,
+    history, and everyday life &mdash; quick, factual, and made to make you
+    look twice.
+  </p>
+
+  <div class="links">
+    <a class="primary" href="https://www.youtube.com/@GetBlinkFacts" target="_blank" rel="noopener">Watch on YouTube</a>
+    <a class="secondary" href="https://www.tiktok.com/@getblinkfacts" target="_blank" rel="noopener">Follow on TikTok</a>
+  </div>
+
+  <footer>
+    <a href="terms.html">Terms of Service</a> &middot;
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
